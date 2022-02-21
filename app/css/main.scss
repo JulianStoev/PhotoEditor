@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  background-image: url('../images//transparency.jpg');
+  background-repeat: repeat;
+}
+
+.editorCanvas {
+  margin: 0 auto;
+  display: block;
+  width: 800px;
+  height: 600px;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  cursor: grab;
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+.header {
+  margin-bottom: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: white;
+  box-shadow: 1px 0 3px rgba(0,0,0,0.3);
+  .fileSelector {
+    padding: 10px;
+  }
+  .button {
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 4px;
+    color: white;
+    background-color: #f4633a;
+    outline: none;
+    cursor: pointer;
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+}
